@@ -1,0 +1,25 @@
+<MyRoot>:
+    ran: ran
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "Location"
+            text_size: self.size
+            halign: 'center'
+            valign: 'middle'
+            font_size: 64
+            color: 0.92, 0.45, 0
+        Label:
+            id: ran
+            text: "-"
+            font_size: 64
+        Button:
+            text: "Start"
+            font_size: 32
+            size: 100, 50
+            on_press: root.gen()
+        Button:
+            text: "Stop"
+            font_size: 32
+            size: 100, 50
+            on_press: root.gps_stop()
